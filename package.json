@@ -1,0 +1,14 @@
+{
+    "name": "plex-dash",
+    "version": "1.0.0",
+    "description": "An app that shows what Plex is currently playing",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3"
+    }
+}
