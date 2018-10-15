@@ -1,7 +1,14 @@
 const express = require('express');
 const app = express();
+const bodyparser = require('body-parser');
 
 const music = require('./routes/music');
+
+// parse application/x-www-form-urlencoded
+app.use(bodyparser.urlencoded({ extended: false }))
+ 
+// parse application/json
+app.use(bodyparser.json())
 
 app.get('/test', (req, res) => {  
     setTimeout(() => {
