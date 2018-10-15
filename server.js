@@ -8,7 +8,7 @@ const music = require('./routes/music');
 app.use(bodyParser.json())
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/test', (req, res) => {  
     setTimeout(() => {
