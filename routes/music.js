@@ -9,7 +9,8 @@ router.post('/', upload.single('thumb'), function(req, res, next) {
     console.log( 'title', payload.Metadata.title );
     console.log( 'album', payload.Metadata.parentTitle );
     console.log( 'artist', payload.Metadata.grandparentTitle );
-    
+
+    res.sendStatus(200);
 });
 
 module.exports = router;
