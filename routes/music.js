@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.post('/', function(req, res, next) {
     console.log("Webhook received!");
-    console.log(req.body);
+    console.log(JSON.parse( req.body ));
 });
 
 module.exports = router;
